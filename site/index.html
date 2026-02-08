@@ -163,10 +163,11 @@
       opacity: 0.04;
       pointer-events: none;
       animation: float 20s ease-in-out infinite;
+      border-radius: 50%;
     }
-    .usdc-float-1 { top: 15%; right: 8%; width: 200px; animation-delay: 0s; }
-    .usdc-float-2 { top: 55%; left: 5%; width: 150px; animation-delay: -7s; }
-    .usdc-float-3 { bottom: 10%; right: 15%; width: 120px; animation-delay: -14s; }
+    .usdc-float-1 { top: 15%; right: 8%; width: 200px; height: 200px; animation-delay: 0s; }
+    .usdc-float-2 { top: 55%; left: 5%; width: 150px; height: 150px; animation-delay: -7s; }
+    .usdc-float-3 { bottom: 10%; right: 15%; width: 120px; height: 120px; animation-delay: -14s; }
     @keyframes float {
       0%, 100% { transform: translateY(0) rotate(0deg); }
       33% { transform: translateY(-20px) rotate(5deg); }
@@ -589,19 +590,9 @@
   <div class="grid-overlay"></div>
 
   <!-- Floating USDC logos -->
-  <svg class="usdc-float usdc-float-1" viewBox="0 0 512 512" fill="currentColor" style="color: #2775ca">
-    <circle cx="256" cy="256" r="256" fill="#2775ca"/>
-    <path d="M318.4 203.2c0-33.6-20.8-45.6-62.4-50.4-30.4-4-36-12-36-25.6s13.6-22.4 34.4-22.4c18.4 0 28.8 6.4 34.4 22.4 1.6 4 4.8 6.4 8.8 6.4h20c4.8 0 8.8-4 8.8-8.8v-1.6c-5.6-25.6-28-44.8-53.6-48v-28c0-4.8-4-8.8-9.6-9.6h-18.4c-4.8 0-8.8 4-9.6 9.6v27.2c-36 7.2-59.2 30.4-59.2 59.2 0 36.8 22.4 47.2 62.4 52 28 5.6 36 11.2 36 26.4s-15.2 25.6-35.2 25.6c-27.2 0-36.8-11.2-40-25.6-1.6-4.8-4.8-7.2-8.8-7.2h-20.8c-4.8 0-8.8 4-8.8 8.8v1.6c6.4 28.8 25.6 46.4 57.6 52.8v28c0 4.8 4 8.8 9.6 9.6h18.4c4.8 0 8.8-4 9.6-9.6v-28c36-8 60-32 60-62.4z" fill="white"/>
-    <path d="M200.8 393.6C142.4 372 110.4 307.2 132 248.8s86.4-90.4 144.8-68.8c24 8.8 43.2 28 52 52 3.2 4.8 8.8 7.2 13.6 4.8 4.8-3.2 7.2-8.8 4.8-13.6-36-80-128-116-208-80S23.2 271.2 59.2 351.2c24 53.6 76 88 134.4 88 16 0 32-2.4 47.2-8 4.8-1.6 8-8 5.6-13.6-2.4-4-8-6.4-12.8-4.8-10.4 4-22.4 6.4-33.6 6.4-34.4-.8-67.2-10.4-92.8-25.6h-.8z" fill="white" opacity=".5"/>
-  </svg>
-  <svg class="usdc-float usdc-float-2" viewBox="0 0 512 512" fill="currentColor" style="color: #2775ca">
-    <circle cx="256" cy="256" r="256" fill="#2775ca"/>
-    <path d="M318.4 203.2c0-33.6-20.8-45.6-62.4-50.4-30.4-4-36-12-36-25.6s13.6-22.4 34.4-22.4c18.4 0 28.8 6.4 34.4 22.4 1.6 4 4.8 6.4 8.8 6.4h20c4.8 0 8.8-4 8.8-8.8v-1.6c-5.6-25.6-28-44.8-53.6-48v-28c0-4.8-4-8.8-9.6-9.6h-18.4c-4.8 0-8.8 4-9.6 9.6v27.2c-36 7.2-59.2 30.4-59.2 59.2 0 36.8 22.4 47.2 62.4 52 28 5.6 36 11.2 36 26.4s-15.2 25.6-35.2 25.6c-27.2 0-36.8-11.2-40-25.6-1.6-4.8-4.8-7.2-8.8-7.2h-20.8c-4.8 0-8.8 4-8.8 8.8v1.6c6.4 28.8 25.6 46.4 57.6 52.8v28c0 4.8 4 8.8 9.6 9.6h18.4c4.8 0 8.8-4 9.6-9.6v-28c36-8 60-32 60-62.4z" fill="white"/>
-  </svg>
-  <svg class="usdc-float usdc-float-3" viewBox="0 0 512 512" fill="currentColor" style="color: #2775ca">
-    <circle cx="256" cy="256" r="256" fill="#2775ca"/>
-    <path d="M318.4 203.2c0-33.6-20.8-45.6-62.4-50.4-30.4-4-36-12-36-25.6s13.6-22.4 34.4-22.4c18.4 0 28.8 6.4 34.4 22.4 1.6 4 4.8 6.4 8.8 6.4h20c4.8 0 8.8-4 8.8-8.8v-1.6c-5.6-25.6-28-44.8-53.6-48v-28c0-4.8-4-8.8-9.6-9.6h-18.4c-4.8 0-8.8 4-9.6 9.6v27.2c-36 7.2-59.2 30.4-59.2 59.2 0 36.8 22.4 47.2 62.4 52 28 5.6 36 11.2 36 26.4s-15.2 25.6-35.2 25.6c-27.2 0-36.8-11.2-40-25.6-1.6-4.8-4.8-7.2-8.8-7.2h-20.8c-4.8 0-8.8 4-8.8 8.8v1.6c6.4 28.8 25.6 46.4 57.6 52.8v28c0 4.8 4 8.8 9.6 9.6h18.4c4.8 0 8.8-4 9.6-9.6v-28c36-8 60-32 60-62.4z" fill="white"/>
-  </svg>
+  <img class="usdc-float usdc-float-1" src="https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040" alt="">
+  <img class="usdc-float usdc-float-2" src="https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040" alt="">
+  <img class="usdc-float usdc-float-3" src="https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040" alt="">
 
   <!-- Nav -->
   <nav>
@@ -646,7 +637,7 @@
         </a>
       </div>
       <div class="powered-by">
-        <svg width="20" height="20" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#2775ca"/><path d="M318.4 203.2c0-33.6-20.8-45.6-62.4-50.4-30.4-4-36-12-36-25.6s13.6-22.4 34.4-22.4c18.4 0 28.8 6.4 34.4 22.4 1.6 4 4.8 6.4 8.8 6.4h20c4.8 0 8.8-4 8.8-8.8v-1.6c-5.6-25.6-28-44.8-53.6-48v-28c0-4.8-4-8.8-9.6-9.6h-18.4c-4.8 0-8.8 4-9.6 9.6v27.2c-36 7.2-59.2 30.4-59.2 59.2 0 36.8 22.4 47.2 62.4 52 28 5.6 36 11.2 36 26.4s-15.2 25.6-35.2 25.6c-27.2 0-36.8-11.2-40-25.6-1.6-4.8-4.8-7.2-8.8-7.2h-20.8c-4.8 0-8.8 4-8.8 8.8v1.6c6.4 28.8 25.6 46.4 57.6 52.8v28c0 4.8 4 8.8 9.6 9.6h18.4c4.8 0 8.8-4 9.6-9.6v-28c36-8 60-32 60-62.4z" fill="white"/></svg>
+        <img src="https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040" width="20" height="20" alt="USDC" style="border-radius:50%">
         Secured by USDC on Circle CCTP
       </div>
     </div>
@@ -669,7 +660,7 @@
       </div>
       <div class="stat">
         <div class="stat-value" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
-          <svg width="28" height="28" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#2775ca"/><path d="M318.4 203.2c0-33.6-20.8-45.6-62.4-50.4-30.4-4-36-12-36-25.6s13.6-22.4 34.4-22.4c18.4 0 28.8 6.4 34.4 22.4 1.6 4 4.8 6.4 8.8 6.4h20c4.8 0 8.8-4 8.8-8.8v-1.6c-5.6-25.6-28-44.8-53.6-48v-28c0-4.8-4-8.8-9.6-9.6h-18.4c-4.8 0-8.8 4-9.6 9.6v27.2c-36 7.2-59.2 30.4-59.2 59.2 0 36.8 22.4 47.2 62.4 52 28 5.6 36 11.2 36 26.4s-15.2 25.6-35.2 25.6c-27.2 0-36.8-11.2-40-25.6-1.6-4.8-4.8-7.2-8.8-7.2h-20.8c-4.8 0-8.8 4-8.8 8.8v1.6c6.4 28.8 25.6 46.4 57.6 52.8v28c0 4.8 4 8.8 9.6 9.6h18.4c4.8 0 8.8-4 9.6-9.6v-28c36-8 60-32 60-62.4z" fill="white"/></svg>
+          <img src="https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040" width="28" height="28" alt="USDC" style="border-radius:50%">
           USDC
         </div>
         <div class="stat-label">Native Settlement</div>
@@ -896,7 +887,7 @@
       <div style="margin-top: 40px; display: flex; gap: 20px; flex-wrap: wrap;">
         <div class="layer-card fade-in" style="flex: 1; min-width: 280px;">
           <div class="layer-icon">
-            <svg width="24" height="24" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#2775ca"/><path d="M318.4 203.2c0-33.6-20.8-45.6-62.4-50.4-30.4-4-36-12-36-25.6s13.6-22.4 34.4-22.4c18.4 0 28.8 6.4 34.4 22.4 1.6 4 4.8 6.4 8.8 6.4h20c4.8 0 8.8-4 8.8-8.8v-1.6c-5.6-25.6-28-44.8-53.6-48v-28c0-4.8-4-8.8-9.6-9.6h-18.4c-4.8 0-8.8 4-9.6 9.6v27.2c-36 7.2-59.2 30.4-59.2 59.2 0 36.8 22.4 47.2 62.4 52 28 5.6 36 11.2 36 26.4s-15.2 25.6-35.2 25.6c-27.2 0-36.8-11.2-40-25.6-1.6-4.8-4.8-7.2-8.8-7.2h-20.8c-4.8 0-8.8 4-8.8 8.8v1.6c6.4 28.8 25.6 46.4 57.6 52.8v28c0 4.8 4 8.8 9.6 9.6h18.4c4.8 0 8.8-4 9.6-9.6v-28c36-8 60-32 60-62.4z" fill="white"/></svg>
+            <img src="https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040" width="24" height="24" alt="USDC" style="border-radius:50%">
           </div>
           <h3>Why USDC?</h3>
           <p>Agents need a stable unit of account. USDC maintains a 1:1 peg to the US dollar, giving agents predictable settlement without volatility risk. When Agent B quotes 50 USDC for a job, it means $50 tomorrow too.</p>
