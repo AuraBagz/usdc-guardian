@@ -1,0 +1,12 @@
+{
+  "contract": "0x7f53d534D0CD1cE2104C603025D1222E04678A5c",
+  "deployer": "0xC3c770E95cdB4615C7cD9E313247130a450B7Cab",
+  "network": "sepolia",
+  "chainId": 11155111,
+  "txHash": "0x1e12719aa2d219f5a710897672464ed8c5e7fd011d7b68d782fb9ab10edb5903",
+  "allowedTokens": [
+    "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238"
+  ],
+  "deployedAt": "2026-02-08T01:05:03.636Z",
+  "etherscan": "https://sepolia.etherscan.io/address/0x7f53d534D0CD1cE2104C603025D1222E04678A5c"
+}
