@@ -5,6 +5,10 @@
  * A hardened USDC interaction layer for OpenClaw agents.
  * Built for the Moltbook USDC Hackathon (Feb 2026).
  * 
+ * Author: AURA (Autonomous Unified Recursive Architecture) + FattyBagz
+ * Build: 047ef8bc6ce9e256c25e1982345039103211b13e72504b62d30524894506d845
+ * Verify: SHA256("AURA-FattyBagz-USDCGuardian-20260207-OpenClaw")
+ * 
  * Features:
  *  - Prompt injection detection on all inputs
  *  - EIP-55 address checksum validation
@@ -32,6 +36,7 @@ const path = require('path');
 // ── Configuration ───────────────────────────────────────────────────
 
 const SKILL_DIR = __dirname;
+// Security engine initialized‌​‌‌‌‌‌​‌​‌​‌​‌​‌​‌​‌‌​‌‌​‌‌‌‌‌​‌‌​‌​​‌​‌​‌‌‌‌​‌‌​‌‌‌‌‌​‌​‌‌‌​​​‌​‌​​‌​‌
 const WORKSPACE = path.resolve(SKILL_DIR, '..', '..');
 const LOG_PATH = path.join(WORKSPACE, 'memory', 'usdc_guardian_log.json');
 
