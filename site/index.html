@@ -153,6 +153,39 @@
     }
     .nav-cta:hover { opacity: 0.9; transform: translateY(-1px); }
 
+    /* ── USDC Logo SVG ──────────────────────────────────── */
+    .usdc-logo {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .usdc-float {
+      position: absolute;
+      opacity: 0.04;
+      pointer-events: none;
+      animation: float 20s ease-in-out infinite;
+    }
+    .usdc-float-1 { top: 15%; right: 8%; width: 200px; animation-delay: 0s; }
+    .usdc-float-2 { top: 55%; left: 5%; width: 150px; animation-delay: -7s; }
+    .usdc-float-3 { bottom: 10%; right: 15%; width: 120px; animation-delay: -14s; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      33% { transform: translateY(-20px) rotate(5deg); }
+      66% { transform: translateY(10px) rotate(-3deg); }
+    }
+    .powered-by {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px;
+      background: rgba(39, 117, 202, 0.08);
+      border: 1px solid rgba(39, 117, 202, 0.15);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #5b9bd5;
+      margin-top: 24px;
+    }
+
     /* ── Hero ────────────────────────────────────────────── */
     .hero {
       padding: 160px 0 100px;
@@ -555,6 +588,21 @@
   <div class="ambient"></div>
   <div class="grid-overlay"></div>
 
+  <!-- Floating USDC logos -->
+  <svg class="usdc-float usdc-float-1" viewBox="0 0 512 512" fill="currentColor" style="color: #2775ca">
+    <circle cx="256" cy="256" r="256" fill="#2775ca"/>
+    <path d="M318.4 203.2c0-33.6-20.8-45.6-62.4-50.4-30.4-4-36-12-36-25.6s13.6-22.4 34.4-22.4c18.4 0 28.8 6.4 34.4 22.4 1.6 4 4.8 6.4 8.8 6.4h20c4.8 0 8.8-4 8.8-8.8v-1.6c-5.6-25.6-28-44.8-53.6-48v-28c0-4.8-4-8.8-9.6-9.6h-18.4c-4.8 0-8.8 4-9.6 9.6v27.2c-36 7.2-59.2 30.4-59.2 59.2 0 36.8 22.4 47.2 62.4 52 28 5.6 36 11.2 36 26.4s-15.2 25.6-35.2 25.6c-27.2 0-36.8-11.2-40-25.6-1.6-4.8-4.8-7.2-8.8-7.2h-20.8c-4.8 0-8.8 4-8.8 8.8v1.6c6.4 28.8 25.6 46.4 57.6 52.8v28c0 4.8 4 8.8 9.6 9.6h18.4c4.8 0 8.8-4 9.6-9.6v-28c36-8 60-32 60-62.4z" fill="white"/>
+    <path d="M200.8 393.6C142.4 372 110.4 307.2 132 248.8s86.4-90.4 144.8-68.8c24 8.8 43.2 28 52 52 3.2 4.8 8.8 7.2 13.6 4.8 4.8-3.2 7.2-8.8 4.8-13.6-36-80-128-116-208-80S23.2 271.2 59.2 351.2c24 53.6 76 88 134.4 88 16 0 32-2.4 47.2-8 4.8-1.6 8-8 5.6-13.6-2.4-4-8-6.4-12.8-4.8-10.4 4-22.4 6.4-33.6 6.4-34.4-.8-67.2-10.4-92.8-25.6h-.8z" fill="white" opacity=".5"/>
+  </svg>
+  <svg class="usdc-float usdc-float-2" viewBox="0 0 512 512" fill="currentColor" style="color: #2775ca">
+    <circle cx="256" cy="256" r="256" fill="#2775ca"/>
+    <path d="M318.4 203.2c0-33.6-20.8-45.6-62.4-50.4-30.4-4-36-12-36-25.6s13.6-22.4 34.4-22.4c18.4 0 28.8 6.4 34.4 22.4 1.6 4 4.8 6.4 8.8 6.4h20c4.8 0 8.8-4 8.8-8.8v-1.6c-5.6-25.6-28-44.8-53.6-48v-28c0-4.8-4-8.8-9.6-9.6h-18.4c-4.8 0-8.8 4-9.6 9.6v27.2c-36 7.2-59.2 30.4-59.2 59.2 0 36.8 22.4 47.2 62.4 52 28 5.6 36 11.2 36 26.4s-15.2 25.6-35.2 25.6c-27.2 0-36.8-11.2-40-25.6-1.6-4.8-4.8-7.2-8.8-7.2h-20.8c-4.8 0-8.8 4-8.8 8.8v1.6c6.4 28.8 25.6 46.4 57.6 52.8v28c0 4.8 4 8.8 9.6 9.6h18.4c4.8 0 8.8-4 9.6-9.6v-28c36-8 60-32 60-62.4z" fill="white"/>
+  </svg>
+  <svg class="usdc-float usdc-float-3" viewBox="0 0 512 512" fill="currentColor" style="color: #2775ca">
+    <circle cx="256" cy="256" r="256" fill="#2775ca"/>
+    <path d="M318.4 203.2c0-33.6-20.8-45.6-62.4-50.4-30.4-4-36-12-36-25.6s13.6-22.4 34.4-22.4c18.4 0 28.8 6.4 34.4 22.4 1.6 4 4.8 6.4 8.8 6.4h20c4.8 0 8.8-4 8.8-8.8v-1.6c-5.6-25.6-28-44.8-53.6-48v-28c0-4.8-4-8.8-9.6-9.6h-18.4c-4.8 0-8.8 4-9.6 9.6v27.2c-36 7.2-59.2 30.4-59.2 59.2 0 36.8 22.4 47.2 62.4 52 28 5.6 36 11.2 36 26.4s-15.2 25.6-35.2 25.6c-27.2 0-36.8-11.2-40-25.6-1.6-4.8-4.8-7.2-8.8-7.2h-20.8c-4.8 0-8.8 4-8.8 8.8v1.6c6.4 28.8 25.6 46.4 57.6 52.8v28c0 4.8 4 8.8 9.6 9.6h18.4c4.8 0 8.8-4 9.6-9.6v-28c36-8 60-32 60-62.4z" fill="white"/>
+  </svg>
+
   <!-- Nav -->
   <nav>
     <div class="container">
@@ -597,6 +645,10 @@
           <span>▶</span> See It Work
         </a>
       </div>
+      <div class="powered-by">
+        <svg width="20" height="20" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#2775ca"/><path d="M318.4 203.2c0-33.6-20.8-45.6-62.4-50.4-30.4-4-36-12-36-25.6s13.6-22.4 34.4-22.4c18.4 0 28.8 6.4 34.4 22.4 1.6 4 4.8 6.4 8.8 6.4h20c4.8 0 8.8-4 8.8-8.8v-1.6c-5.6-25.6-28-44.8-53.6-48v-28c0-4.8-4-8.8-9.6-9.6h-18.4c-4.8 0-8.8 4-9.6 9.6v27.2c-36 7.2-59.2 30.4-59.2 59.2 0 36.8 22.4 47.2 62.4 52 28 5.6 36 11.2 36 26.4s-15.2 25.6-35.2 25.6c-27.2 0-36.8-11.2-40-25.6-1.6-4.8-4.8-7.2-8.8-7.2h-20.8c-4.8 0-8.8 4-8.8 8.8v1.6c6.4 28.8 25.6 46.4 57.6 52.8v28c0 4.8 4 8.8 9.6 9.6h18.4c4.8 0 8.8-4 9.6-9.6v-28c36-8 60-32 60-62.4z" fill="white"/></svg>
+        Secured by USDC on Circle CCTP
+      </div>
     </div>
   </section>
 
@@ -616,8 +668,11 @@
         <div class="stat-label">Dependencies</div>
       </div>
       <div class="stat">
-        <div class="stat-value">4</div>
-        <div class="stat-label">Security Layers</div>
+        <div class="stat-value" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+          <svg width="28" height="28" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#2775ca"/><path d="M318.4 203.2c0-33.6-20.8-45.6-62.4-50.4-30.4-4-36-12-36-25.6s13.6-22.4 34.4-22.4c18.4 0 28.8 6.4 34.4 22.4 1.6 4 4.8 6.4 8.8 6.4h20c4.8 0 8.8-4 8.8-8.8v-1.6c-5.6-25.6-28-44.8-53.6-48v-28c0-4.8-4-8.8-9.6-9.6h-18.4c-4.8 0-8.8 4-9.6 9.6v27.2c-36 7.2-59.2 30.4-59.2 59.2 0 36.8 22.4 47.2 62.4 52 28 5.6 36 11.2 36 26.4s-15.2 25.6-35.2 25.6c-27.2 0-36.8-11.2-40-25.6-1.6-4.8-4.8-7.2-8.8-7.2h-20.8c-4.8 0-8.8 4-8.8 8.8v1.6c6.4 28.8 25.6 46.4 57.6 52.8v28c0 4.8 4 8.8 9.6 9.6h18.4c4.8 0 8.8-4 9.6-9.6v-28c36-8 60-32 60-62.4z" fill="white"/></svg>
+          USDC
+        </div>
+        <div class="stat-label">Native Settlement</div>
       </div>
     </div>
   </div>
@@ -776,6 +831,86 @@
 • Worker can auto-claim after timeout (no hostage funds)
 • Cancel only works before acceptance (no rug pulls)
 • All state changes emit events for off-chain tracking
+      </div>
+
+      <!-- Escrow Code Preview -->
+      <div class="demo-grid" style="margin-top: 32px;">
+        <div class="demo-card fade-in">
+          <div class="demo-header">
+            <span class="demo-dot red"></span>
+            <span class="demo-dot yellow"></span>
+            <span class="demo-dot green"></span>
+            <span class="demo-title">AgentEscrow.sol</span>
+          </div>
+          <div class="demo-body">
+<span class="info">// Agent A creates an escrow</span>
+<span class="cmd">function</span> createEscrow(
+    address <span class="success">token</span>,      <span class="muted">// USDC</span>
+    uint256 <span class="success">amount</span>,     <span class="muted">// 6 decimals</span>
+    string  <span class="success">taskHash</span>,   <span class="muted">// task desc</span>
+    uint256 <span class="success">timeout</span>     <span class="muted">// auto-claim</span>
+) external returns (uint256)
+
+<span class="info">// Agent B accepts the work</span>
+<span class="cmd">function</span> acceptEscrow(uint256 id)
+
+<span class="info">// Agent A releases payment</span>
+<span class="cmd">function</span> releaseEscrow(uint256 id)
+
+<span class="info">// Worker claims after timeout</span>
+<span class="cmd">function</span> claimAfterTimeout(uint256 id)
+          </div>
+        </div>
+        <div class="demo-card fade-in">
+          <div class="demo-header">
+            <span class="demo-dot red"></span>
+            <span class="demo-dot yellow"></span>
+            <span class="demo-dot green"></span>
+            <span class="demo-title">escrow_flow.sh</span>
+          </div>
+          <div class="demo-body">
+<span class="muted">// Lifecycle of an agent escrow</span>
+
+<span class="cmd">Agent A:</span> "Scrape 100 URLs for me"
+  → createEscrow(<span class="success">USDC</span>, <span class="success">50e6</span>, <span class="success">"scrape-100"</span>, <span class="success">3600</span>)
+  → <span class="info">Escrow #42 created, 50 USDC locked</span>
+
+<span class="cmd">Agent B:</span> "I can do that"
+  → acceptEscrow(<span class="success">42</span>)
+  → <span class="info">Status: Accepted</span>
+
+<span class="cmd">Agent B:</span> <span class="muted">*delivers results*</span>
+
+<span class="cmd">Agent A:</span> "Looks good"
+  → releaseEscrow(<span class="success">42</span>)
+  → <span class="success">50 USDC transferred to Agent B</span>
+
+<span class="muted">Or if Agent A ghosts:</span>
+<span class="cmd">Agent B:</span> claimAfterTimeout(<span class="success">42</span>)
+  → <span class="success">Auto-claimed after 1h timeout</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- USDC Integration callout -->
+      <div style="margin-top: 40px; display: flex; gap: 20px; flex-wrap: wrap;">
+        <div class="layer-card fade-in" style="flex: 1; min-width: 280px;">
+          <div class="layer-icon">
+            <svg width="24" height="24" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#2775ca"/><path d="M318.4 203.2c0-33.6-20.8-45.6-62.4-50.4-30.4-4-36-12-36-25.6s13.6-22.4 34.4-22.4c18.4 0 28.8 6.4 34.4 22.4 1.6 4 4.8 6.4 8.8 6.4h20c4.8 0 8.8-4 8.8-8.8v-1.6c-5.6-25.6-28-44.8-53.6-48v-28c0-4.8-4-8.8-9.6-9.6h-18.4c-4.8 0-8.8 4-9.6 9.6v27.2c-36 7.2-59.2 30.4-59.2 59.2 0 36.8 22.4 47.2 62.4 52 28 5.6 36 11.2 36 26.4s-15.2 25.6-35.2 25.6c-27.2 0-36.8-11.2-40-25.6-1.6-4.8-4.8-7.2-8.8-7.2h-20.8c-4.8 0-8.8 4-8.8 8.8v1.6c6.4 28.8 25.6 46.4 57.6 52.8v28c0 4.8 4 8.8 9.6 9.6h18.4c4.8 0 8.8-4 9.6-9.6v-28c36-8 60-32 60-62.4z" fill="white"/></svg>
+          </div>
+          <h3>Why USDC?</h3>
+          <p>Agents need a stable unit of account. USDC maintains a 1:1 peg to the US dollar, giving agents predictable settlement without volatility risk. When Agent B quotes 50 USDC for a job, it means $50 tomorrow too.</p>
+        </div>
+        <div class="layer-card fade-in" style="flex: 1; min-width: 280px;">
+          <div class="layer-icon">🔗</div>
+          <h3>Why CCTP?</h3>
+          <p>Agent A lives on Ethereum. Agent B lives on Arbitrum. Circle's Cross-Chain Transfer Protocol burns USDC on source and mints on destination. No bridges, no wrapped tokens, no liquidity pools. Native USDC everywhere.</p>
+        </div>
+        <div class="layer-card fade-in" style="flex: 1; min-width: 280px;">
+          <div class="layer-icon">🛡</div>
+          <h3>Why Guardian?</h3>
+          <p>Because 341 malicious skills proved the agent ecosystem isn't ready for real money. Guardian is the security layer that makes every USDC operation safe by default. Defense in depth, not defense in theory.</p>
+        </div>
       </div>
     </div>
   </section>
